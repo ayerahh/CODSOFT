@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aira's Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2c6faefed4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>undergraduate Student</p>
+          <h1>Hi, I'm <span>Aira</span><br />Salish from Kannur</h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="\images\mypic1.jpg" alt="Profile pic" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I’m Aira Salish, currently pursuing my B.Tech in
+              Computer Science and Engineering with a specialization in
+              Artificial Intelligence and Machine Learning at SRM Institute of
+              Science and Technology. I’m passionate about exploring the dynamic
+              fields of AI and ML, where I can merge creativity and technology
+              to solve complex problems.<br /><br />
+              My journey in tech has been fueled by a desire to innovate and
+              contribute to real-world applications. Whether it’s diving deep
+              into algorithms or building intuitive, efficient systems, I’m
+              always ready to tackle new challenges. When I’m not coding, you
+              might find me exploring new technologies, brainstorming ideas for
+              projects, or engaging in collaborative efforts to grow my skills
+              and knowledge.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Designing Websites</li>
+                <li><span>AIML Developer</span><br />Train AI Models</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024 - Current</span><br />Student
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br />B.Tech CSE(AIML) from SRMIST
+                  Kattankulathur
+                </li>
+                <li>
+                  <span>2021</span><br />Standard XII from Saraswati Vidya niketan ,Elamakkara Kochi ,
+                  Marks - 82%
+                </li>
+                <li>
+                  <span>2018</span><br />Standard X from Mambaram English Medium School, Mambaram Kannur, Marks
+                  - 89%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="certificates">
+      <div class="container">
+        <h1 class="sub-title">Certificate</h1>
+        <div class="certificate">
+          <img src=".\\images\Certificate.jpg" alt="Certificate" />
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src=".\\images\ChatBot screenshot.jpg"
+              alt="ChatBot"
+            />
+            <div class="layer">
+              <h3>ChatBot Analysis</h3>
+              <p>A website for Chatbot Analysis of sentiments.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </p>
+            <div class="social-icons">
+              <a href="https://github.com/ayerahh"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/airasalish/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/airakivy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>  
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Aira Salish <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+    <button id="goToTopBtn" title="Go to top">
+      <i class="fa-solid fa-up-long"></i>
+    </button>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
